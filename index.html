@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Přihlášení nebo registrace uživatele">
+    <title>Přihlášení a Registrace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+            background-color: #ffffff;
+            padding: 50px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .login-btn {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+        .register-btn {
+            background-color: #008CBA;
+            color: white;
+        }
+        .register-btn:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Vítejte zpět!</h1>
+    <p>Prosím, vyberte jednu z následujících možností:</p>
+    <div class="buttons">
+        <button class="login-btn" onclick="window.location.href='prihlaseni.html'">Přihlásit se</button>
+        <button class="register-btn" onclick="window.location.href='registrace.html'">Registrovat se</button>
+    </div>
+</div>
+
+</body>
+</html>
